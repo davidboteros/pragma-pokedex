@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Jaldi', sans-serif;
+}
+
+.main-title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: auto;
+}
+
+.pokemon-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    /* border: 1px solid #000; */
+    position: relative;
+    margin: auto;
+}
+
+.pokemon-desc__section-image {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid #000; */
+    z-index: 2;
+}
+
+.pokemon-desc__name {
+    font-size: 2rem;
+    text-align: center;
+    padding: 8px auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin: 00px 40px 10px;
+}
+
+.pokemon-desc__image {
+    width: 100%;
+    max-width: 250px;
+}
+
+.pokemon-desc__section-attributes {
+    background-color: rgb(59, 144, 255);
+    position: relative;
+    top: -80px;
+    width: 85%;
+    /* border: 1px solid #000; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px;
+    padding-top: 100px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.pokemon-desc__attribute {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+.pokemon-desc__attr-name {
+    width: 50%;
+    text-transform: uppercase;
+}
+
+.pokemon-desc__attr-value {
+    text-transform: uppercase;
+    width: 50%;
+}
+
+@media only screen and (min-width:768px) {
+    .pokemon-desc {
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        max-width: 1300px;
+    }
+    .pokemon-desc__section-attributes {
+        top: 0px;
+        padding: 40px;
+        /* border: 1px solid #000; */
+    }
+    .pokemon-desc__attribute {
+        width: 50%;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid #000; */
+    }
+    .pokemon-desc__attr-name {
+        width: 100%;
+        font-size: 1.3rem;
+        line-height: 1rem;
+        color: #ffffff;
+        text-align: center;
+    }
+    .pokemon-desc__attr-value {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+    .main-title {
+        max-width: 1300px;
+    }
+}
