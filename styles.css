@@ -48,13 +48,12 @@ body {
 
 .pokemon-desc__name {
     font-size: 1.6rem;
-    text-align: center;
-    padding: 8px auto;
     border: 1px solid #172774;
     border-radius: 10px;
     width: 100%;
     margin-bottom: 10px;
     color: #172774;
+    text-align: center;
 }
 
 .pokemon-desc__image {
@@ -71,30 +70,35 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 0px;
     padding-top: 50px;
+    padding-bottom: 30px;
     z-index: 1;
     border-radius: 10px;
 }
 
-.pokemon-desc__attribute {
+.pokemon-desc__attribute-item {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     font-size: 1.2rem;
+    justify-content: space-around;
 }
 
 .pokemon-desc__attr-name {
-    width: 40%;
+    width: 50%;
+    text-align: left;
     text-transform: uppercase;
     color: #172774;
     font-weight: 900;
+    padding-left: 45px;
 }
 
 .pokemon-desc__attr-value {
+    text-align: left;
     text-transform: uppercase;
-    width: 60%;
+    width: 50%;
     font-weight: lighter;
     color: #ffffff;
 }
@@ -153,8 +157,8 @@ body {
 }
 
 @media only screen and (min-width:481px) {
-    .pokemon-desc__attribute {
-        font-size: 2rem;
+    .pokemon-desc__attribute-item {
+        font-size: 1.5rem;
     }
     .pokemon-desc__section-attributes {
         padding: 30px;
@@ -185,10 +189,11 @@ body {
     .pokemon-desc__section-attributes {
         top: 0px;
         margin-bottom: 0px;
-        padding: 40px;
+        padding: 10px;
         max-width: 520px;
+        overflow-wrap: break-word;
     }
-    .pokemon-desc__attribute {
+    .pokemon-desc__attribute-item {
         width: 50%;
         flex-direction: column;
         justify-content: center;
@@ -197,7 +202,9 @@ body {
         width: 100%;
         font-size: 1.3rem;
         line-height: 1rem;
+        margin-bottom: 8px;
         text-align: center;
+        padding-left: 0px;
     }
     .pokemon-desc__attr-value {
         width: 100%;
@@ -207,6 +214,10 @@ body {
     }
     .main-title {
         max-width: 1280px;
+    }
+    .other-pokemons {
+        flex-direction: row;
+        align-items: center;
     }
     .other-pokemons__image-container {
         width: 25%;
