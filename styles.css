@@ -96,6 +96,7 @@ body {
 }
 
 .pokemon-desc__attr-value {
+    padding-right: 45px;
     text-align: left;
     text-transform: uppercase;
     width: 50%;
