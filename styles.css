@@ -212,6 +212,7 @@ body {
         font-size: 2rem;
         line-height: 1.5rem;
         text-align: center;
+        padding: 0px;
     }
     .main-title {
         max-width: 1280px;
@@ -219,9 +220,16 @@ body {
     .other-pokemons {
         flex-direction: row;
         align-items: center;
+        padding: 20px 40px;
+    }
+    .other-pokemons__pokemons-container {
+        justify-content: space-evenly;
+        width: 70%;
+        /* padding: 0px 10%; */
     }
     .other-pokemons__image-container {
-        width: 25%;
+        width: auto;
+        max-width: 23%;
     }
     .other-pokemons__image {
         width: 100px;
